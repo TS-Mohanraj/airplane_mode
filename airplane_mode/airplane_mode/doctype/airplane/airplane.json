@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "{airline}-.###",
+ "autoname": ".{airline}.-.###",
  "creation": "2026-06-08 22:46:42.622773",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -43,8 +43,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-06-08 23:53:09.840905",
+ "links": [
+  {
+   "link_doctype": "Airplane Ticket",
+   "link_fieldname": "flight"
+  }
+ ],
+ "modified": "2026-06-09 16:56:05.463878",
  "modified_by": "Administrator",
  "module": "Airplane mode",
  "name": "Airplane",

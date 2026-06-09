@@ -2,54 +2,32 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2026-06-08 22:44:18.513347",
+ "creation": "2026-06-09 15:43:39.379422",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "airline_section",
-  "founding_year",
-  "customer_care_number",
-  "headquarters"
+  "airplane_ticket_add_on_type_section",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "airline_section",
+   "fieldname": "airplane_ticket_add_on_type_section",
    "fieldtype": "Section Break",
-   "label": "Airline"
+   "label": "Airplane Ticket Add-on Type"
   },
   {
-   "fieldname": "founding_year",
-   "fieldtype": "Int",
-   "label": "Founding Year",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "customer_care_number",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Customer Care Number",
-   "reqd": 1
-  },
-  {
-   "fieldname": "headquarters",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Headquarters",
-   "reqd": 1
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Airplane",
-   "link_fieldname": "airline"
-  }
- ],
- "modified": "2026-06-09 16:35:24.228747",
+ "links": [],
+ "modified": "2026-06-09 15:46:29.437346",
  "modified_by": "Administrator",
  "module": "Airplane mode",
- "name": "Airline",
+ "name": "Airplane Ticket Add-on Type",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [

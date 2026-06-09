@@ -41,13 +41,8 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Airline",
-   "link_fieldname": "founding_year"
-  }
- ],
- "modified": "2026-06-08 23:50:31.873655",
+ "links": [],
+ "modified": "2026-06-09 16:51:09.399070",
  "modified_by": "Administrator",
  "module": "Airplane mode",
  "name": "Airport",
