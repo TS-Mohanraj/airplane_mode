@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2026-06-09 16:11:29.942224",
@@ -7,17 +8,19 @@
  "engine": "InnoDB",
  "field_order": [
   "airplane_flight_section",
-  "airplane",
+  "airline",
   "date_of_departure",
   "time_of_departure",
   "duration",
   "status",
+  "is_published",
   "column_break_egqs",
   "source_airport",
   "source_airport_code",
   "destination_airport",
   "destination_airport_code",
   "naming_series",
+  "route",
   "section_break_kmt9",
   "amended_from"
  ],
@@ -95,14 +98,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "airplane",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Airplane",
-   "options": "Airplane",
-   "reqd": 1
-  },
-  {
    "fetch_from": "source_airport.code",
    "fieldname": "source_airport_code",
    "fieldtype": "Data",
@@ -113,10 +108,31 @@
    "fieldname": "destination_airport_code",
    "fieldtype": "Data",
    "label": "Destination Airport Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is_published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airplane",
+   "options": "Airplane",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [
   {
@@ -124,7 +140,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2026-06-09 17:26:34.238968",
+ "modified": "2026-06-10 07:44:01.716185",
  "modified_by": "Administrator",
  "module": "Airplane mode",
  "name": "Airplane Flight",
@@ -145,6 +161,7 @@
    "write": 1
   }
  ],
+ "route": "route",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",

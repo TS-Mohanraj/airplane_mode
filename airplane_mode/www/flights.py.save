@@ -1,0 +1,5 @@
+context.flights = frappe.get_all(
+    "Airplane Flight",
+    filters={"is_published": 1},
+    fields=["name", "route", "airline"]
+)
