@@ -45,11 +45,11 @@
  "index_web_pages_for_search": 1,
  "links": [
   {
-   "link_doctype": "Airplane Ticket",
-   "link_fieldname": "flight"
+   "link_doctype": "Airplane Flight",
+   "link_fieldname": "airplane"
   }
  ],
- "modified": "2026-06-09 16:56:05.463878",
+ "modified": "2026-06-10 03:17:59.449735",
  "modified_by": "Administrator",
  "module": "Airplane mode",
  "name": "Airplane",
